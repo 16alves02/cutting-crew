@@ -1,0 +1,157 @@
+.painel {
+  min-height: 100vh;
+}
+.painel__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+  max-width: 52rem;
+  margin-inline: auto;
+  padding: 1.5rem var(--gutter) 0;
+}
+.painel__voltar {
+  font-size: 0.95rem;
+}
+.painel__titulo {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.6rem, 9vw, 4.5rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  flex-basis: 100%;
+}
+.painel__corpo {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 52rem;
+  margin-inline: auto;
+  padding: 1.5rem var(--gutter) 4rem;
+}
+.painel__cartao {
+  display: grid;
+  gap: 1rem;
+  justify-items: start;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+}
+.painel__cartao h2 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.painel__nota {
+  color: var(--fg-soft);
+  font-size: 0.95rem;
+}
+.painel__aviso {
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--navy);
+  background: var(--foam);
+}
+.painel label {
+  display: grid;
+  gap: 0.35rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.painel input:not([type="checkbox"]):not([type="file"]),
+.painel textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  font: inherit;
+  font-weight: 400;
+  color: var(--fg);
+  background: #fff;
+  border: 1px solid var(--navy);
+  border-radius: 0;
+}
+.painel label.btn {
+  display: inline-flex;
+  width: auto;
+  cursor: pointer;
+}
+.painel__form {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  justify-items: start;
+}
+.painel__entrar {
+  max-width: 26rem;
+}
+.painel__link {
+  padding: 0.4rem 0;
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--fg);
+  text-decoration: underline;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.painel__barra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.painel__msg {
+  font-size: 0.95rem;
+}
+.painel__msg--topo {
+  padding: 0.75rem 1rem;
+  background: var(--foam);
+}
+.painel__retrato {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.painel__retrato img,
+.painel__sem-retrato {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  background: var(--foam);
+}
+.painel .painel__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-weight: 400;
+}
+.painel__consent input {
+  margin-top: 0.3rem;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.painel__grelha {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+.painel__grelha li {
+  display: grid;
+  gap: 0.35rem;
+  align-content: start;
+}
+.painel__grelha img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.painel__grelha input {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.5rem;
+}
+.painel :focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
