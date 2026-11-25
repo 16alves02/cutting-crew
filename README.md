@@ -1,3 +1,5 @@
+> **Idioma / Language:** [Português (Portugal)](README.md) · [English](README.en.md)
+
 # CUTTING CREW Barbershop — website
 
 Site de uma página, em React + TypeScript + Vite, para a barbearia **CUTTING CREW Barbershop** (Cucujães, Aveiro).
